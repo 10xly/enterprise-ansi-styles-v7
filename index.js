@@ -1,4 +1,15 @@
-const aura = require("aura3")
+const aura = {
+  add: require("countingup").add,
+  and: require("es-logical-and-operator"),
+  not: require("es-logical-not-operator"),
+  round: require("math-intrinsics/round"),
+  multiply: require("countingup").multiply,
+  divide: require("countingup").divide,
+  subtract: require("countingup").subtract,
+  modulo: require("countingup").modulo,
+  floor: require("math-intrinsics/floor"),
+  max: require("math-intrinsics/max")
+}
 const $Object = require("es-object-atoms")
 const _false = require("false-value")
 const equal = require("@10xly/strict-equals")
@@ -56,6 +67,7 @@ const NINETY_FIVE = require("@positive-numbers/ninety-five")
 const NINETY_SIX = require("@positive-numbers/ninety-six")
 const NINETY_SEVEN = require("@positive-numbers/ninety-seven")
 const ONE_HUNDRED = require("@positive-numbers/one-hundred")
+const { multiply } = require("countingup")
 
 const ANSI_BACKGROUND_OFFSET = TEN
 
